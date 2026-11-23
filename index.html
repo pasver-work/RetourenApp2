@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta
+<meta name="viewport"
+content="width=device-width, initial-scale=1">
+    
+<title>Retouren Scanner</title>
+
+<link rel="stylesheet" href="./style.css?v=20261123">
+
+<script src="https://unpkg.com/html5-qrcode"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- Scanner -->
+
+    <div id="reader"></div>
+
+    <!-- Barcode -->
+
+    <div class="section-card">
+
+        <label class="field-label">
+
+            EAN / Barcode
+
+        </label>
+
+        <input
+        id="barcode"
+        type="text"
+        readonly>
+
+    </div>
+
+    <!-- Resultaat -->
+
+    <div id="resultaat"></div>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+
+</html>

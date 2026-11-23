@@ -1,0 +1,284 @@
+
+/* =================================
+   ALGEMEEN
+================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    min-height: 100%;
+}
+
+body {
+    margin: 0 !important;
+    padding: 8px !important;
+    width: 100%;
+    background: #f6f6f6 !important;
+    font-family: Arial, Helvetica, sans-serif !important;
+    color: #292929;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* =================================
+   CAMERA SCANNER
+================================= */
+
+#reader {
+    width: 100% !important;
+    height: 250px !important;
+    max-height: 250px !important;
+    margin: 0 auto 12px auto !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+    border: none !important;
+    border-radius: 20px !important;
+    background: #111 !important;
+    position: relative;
+}
+
+#reader__scan_region {
+    width: 100% !important;
+    height: 250px !important;
+    max-height: 250px !important;
+    overflow: hidden !important;
+}
+
+#reader video {
+    width: 100% !important;
+    height: 250px !important;
+    max-height: 250px !important;
+    object-fit: cover !important;
+    border: none !important;
+    border-radius: 20px !important;
+}
+
+#reader__dashboard,
+#reader__dashboard_section,
+#reader__dashboard_section_csr,
+#reader__header_message,
+#reader__status_span {
+    display: none !important;
+}
+
+/* =================================
+   KAARTEN
+================================= */
+
+.section-card,
+.detail-card,
+.aantal-card {
+    width: 100%;
+    background: #d6d6d3 !important;
+    border: none !important;
+    border-radius: 20px !important;
+    padding: 15px !important;
+    margin: 0 0 12px 0 !important;
+}
+
+/* =================================
+   LABELS
+================================= */
+
+.field-label {
+    display: block;
+    font-family: Arial, sans-serif !important;
+    font-size: 19px;
+    font-weight: normal;
+    margin-bottom: 10px;
+    color: #292929;
+}
+
+/* =================================
+   INVULVELDEN
+================================= */
+
+input,
+select {
+    display: block;
+    width: 100% !important;
+    min-height: 58px;
+    padding: 13px !important;
+    border: 1px solid #999 !important;
+    border-radius: 8px !important;
+    background: #f6f6f6 !important;
+    color: #292929;
+    font-family: Arial, sans-serif !important;
+    font-size: 17px !important;
+    outline: none;
+}
+
+input {
+    margin: 0;
+}
+
+/* =================================
+   GELE KNOPPEN
+================================= */
+
+.zoek-button,
+.send-button {
+    display: block;
+    width: 100% !important;
+    min-height: 65px;
+    padding: 16px !important;
+    margin: 0 0 12px 0 !important;
+    border: none !important;
+    border-radius: 40px !important;
+    background: #ffd000 !important;
+    color: #222 !important;
+    font-family: Arial, sans-serif !important;
+    font-size: 21px !important;
+    font-weight: normal !important;
+    text-align: center;
+}
+
+/* =================================
+   ARTIKEL DETAILS
+================================= */
+
+.detail-card {
+    background: #d6d6d3 !important;
+    padding: 17px !important;
+}
+
+.detail-title {
+    font-family: Arial, sans-serif !important;
+    font-size: 26px !important;
+    font-weight: normal;
+    margin: 0 0 18px 0 !important;
+    color: #292929;
+}
+
+.detail-text {
+    font-family: Arial, sans-serif !important;
+    font-size: 17px !important;
+    line-height: 1.35;
+    margin-bottom: 5px !important;
+    color: #292929;
+    overflow-wrap: anywhere;
+}
+
+/* =================================
+   AANTAL
+================================= */
+
+.aantal-card {
+    background: #d6d6d3 !important;
+    padding: 16px !important;
+}
+
+.aantal-card h2 {
+    font-family: Arial, sans-serif !important;
+    font-size: 25px;
+    font-weight: normal;
+    margin: 0;
+    color: #292929;
+}
+
+.aantal-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.aantal-knop {
+    width: 65px !important;
+    height: 65px !important;
+    padding: 0 !important;
+    border: none !important;
+    border-radius: 50% !important;
+    background: #ffd000 !important;
+    color: #222;
+    font-family: Arial, sans-serif !important;
+    font-size: 28px !important;
+    font-weight: bold;
+}
+
+.aantal-waarde {
+    font-family: Arial, sans-serif !important;
+    font-size: 38px !important;
+    font-weight: normal;
+    color: #222;
+}
+
+/* =================================
+   SOURCE EN ACTION
+================================= */
+
+#resultaat .section-card {
+    background: #d6d6d3 !important;
+    padding: 15px !important;
+}
+
+#resultaat .field-label {
+    margin-bottom: 10px;
+}
+
+#resultaat select {
+    min-height: 65px;
+}
+
+/* =================================
+   VERSTUURKNOP
+================================= */
+
+#resultaat .send-button {
+    margin-top: 2px !important;
+    margin-bottom: 15px !important;
+}
+
+/* =================================
+   TELEFOON
+================================= */
+
+@media screen and (max-width: 600px) {
+
+    body {
+        padding: 7px !important;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    #reader {
+        height: 230px !important;
+        max-height: 230px !important;
+    }
+
+    #reader__scan_region {
+        height: 230px !important;
+        max-height: 230px !important;
+    }
+
+    #reader video {
+        height: 230px !important;
+        max-height: 230px !important;
+    }
+
+    .detail-title {
+        font-size: 23px !important;
+    }
+
+    .detail-text {
+        font-size: 16px !important;
+    }
+
+    .aantal-knop {
+        width: 58px !important;
+        height: 58px !important;
+    }
+
+    .aantal-waarde {
+        font-size: 34px !important;
+    }
+}
